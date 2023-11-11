@@ -1,0 +1,26 @@
+.get {
+  padding: var(--offset) 0;
+  background-color: #f9f9f9;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__item {
+    grid-column: 4 span;
+  }
+
+  &__item-head {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--dark-color);
+  }
+
+  &__item-descr {
+    margin: 0;
+  }
+
+
+}
