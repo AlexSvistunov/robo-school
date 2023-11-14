@@ -52,8 +52,8 @@ console.log(mobileCheck())
 // Подключение свайпера
 // import Swiper, { Navigation, Pagination } from 'swiper';
 // Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
+// const swiper = new Swiper('.trainers__inner', {
+//   slidesPerView: 3,
 // });
 
 // Подключение анимаций по скроллу

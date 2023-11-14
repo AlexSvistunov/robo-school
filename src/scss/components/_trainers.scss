@@ -1,0 +1,40 @@
+.trainers {
+  padding: var(--offset) 0;
+
+
+}
+
+.trainers-list {
+
+
+  // &__item {
+  //   grid-column: 4 span;
+  // }
+
+  &__img {
+    margin-bottom: 20px;
+  }
+
+  &__post {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    margin: 0;
+    margin-bottom: 10px;
+    color: var(--dark-color);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+  }
+
+  &__btn {
+    color: var(--accent-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+  }
+}
