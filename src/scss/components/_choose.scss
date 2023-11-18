@@ -1,0 +1,92 @@
+.choose {
+  padding: var(--offset) 0;
+  &__item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(20, 16, 36, 0.20);
+    min-height: 460px;
+    grid-column: 4 span;
+    transition: background-color 0.35s ease-in-out, transform 0.35s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+      background-color: var(--dark-color);
+      transition: background-color 0.35s ease-in-out, transform 0.35s ease-in-out;
+      .choose__item-head, .choose__item-price, .choose__item-descr {
+        color: var(--light-color);
+        transition: color 0.35s ease-in-out;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__item-head {
+    position: relative;
+    margin: 0;
+    margin-bottom: 63px;
+    color: var(--dark-color);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    transition: color 0.35s ease-in-out;
+
+    &::before {
+      --line-width: 18px;
+      content: "";
+      position: absolute;
+      left: calc(-15px - var(--line-width));
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: currentColor;
+      width: var(--line-width);
+      height: 4px;
+    }
+
+    &::after {
+      --line-width: 18px;
+      content: "";
+      position: absolute;
+      right: calc(-15px - var(--line-width));
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: currentColor;
+      width: var(--line-width);
+      height: 4px;
+    }
+  }
+
+  &__item-price {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--dark-color);
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 160%;
+    transition: color 0.35s ease-in-out;
+  }
+
+  &__item-descr {
+    align-self: stretch;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--dark-color);
+    font-family: Jost;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    transition: color 0.35s ease-in-out;
+  }
+
+  &__item-btn {
+    margin-top: auto;
+  }
+}
